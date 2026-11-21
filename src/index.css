@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Hind Siliguri', 'Inter', system-ui, -apple-system, sans-serif;
+    color: #0f172a;
+    background-color: #ffffff;
+  }
+
+  .font-en {
+    font-family: 'Inter', 'Hind Siliguri', system-ui, sans-serif;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes notice-marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-notice-marquee {
+  display: inline-flex;
+  width: max-content;
+  animation: notice-marquee 34s linear infinite;
+}
+
+.animate-notice-marquee:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-notice-marquee {
+    animation: none;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #admit-card-printable,
+  #admit-card-printable * {
+    visibility: visible;
+  }
+  #admit-card-printable {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background: #ffffff !important;
+    box-shadow: none !important;
+    border: 1px solid #0f172a !important;
+  }
+}

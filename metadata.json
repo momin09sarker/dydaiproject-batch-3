@@ -1,0 +1,6 @@
+{
+  "name": "dydaibatch03",
+  "description": "কৃত্রিম বুদ্ধিমত্তা (AI) প্রযুক্তির মাধ্যমে দক্ষতা উন্নয়ন প্রকল্প (ব্যাচ-০৩) — যুব উন্নয়ন অধিদপ্তর, যুব ও ক্রীড়া মন্ত্রণালয়।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
